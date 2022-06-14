@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/fullscreenBackgroundColor"
+    android:theme="@style/ThemeOverlay.TugasGObeta.FullscreenContainer"
+    android:backgroundTint="#f1eeee"
+    tools:context=".FullscreenActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="@style/Widget.Theme.TugasGObeta.ButtonBar.Fullscreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:orientation="horizontal"
+            tools:ignore="useless_parent"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="#79b061"
+            android:textColor="#2c423d"
+            android:text="Kelas"
+            />
+
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginRight="125dp"
+            android:backgroundTint="#ffbd59"
+            android:text="To Do List"
+            android:textColor="#2c423d" />
+
+        <Button
+
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="250dp"
+            android:backgroundTint="#d9d9d9"
+            android:textColor="#2c423d"
+            android:text="E-Library" />
+
+        <TextView
+            android:id="@+id/fullscreen_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:keepScreenOn="true"
+            android:text="TugasGO Beta"
+            android:textColor="#CCCCCC"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+
+
+    </FrameLayout>
+
+</FrameLayout>
